@@ -117,7 +117,8 @@
               <li><p><a href="https://flask.palletsprojects.com/en/1.1.x/quickstart/#rendering-templates" rel="nofollow" target="_blank">Flask Rendering Templates</a></p></li>
               <li><p><a href="https://flask.palletsprojects.com/en/1.1.x/deploying/wsgi-standalone/" target="_blank" rel="nofollow">Gunicorn [Green Unicorn]</a> is a WSGI [Web Server Gateway Interface] HTTP Server for UNIX. WSGI is a protocol for Python applications in ordeer to serve websites in a uniform matter.</p></li>
               <li><p><a href="https://github.com/pypa/pipenv" target="_blank" rel="nofollow">Pipenv</a> is a tool that brings packaging tools for Python. <br>You no longer need to use <code>pip</code> and <code>virtualenv</code> separately. They work together.</p></li>
-              <li><p><a href="https://support.apple.com/guide/terminal/use-command-line-text-editors-apdb02f1133-25af-4c65-8976-159609f99817/mac" target="_blank" rel="nofollow">Nano</a> <code>nano</code> is a simple command-line editor. See the <a href="x-man-page://nano">nano man page</a>.</p></p></li>
+              <li><p><a href="https://support.apple.com/guide/terminal/use-command-line-text-editors-apdb02f1133-25af-4c65-8976-159609f99817/mac" target="_blank" rel="nofollow">Nano</a> <code>nano</code> is a simple command-line editor. See the <a href="x-man-page://nano">nano man page</a>.</p></li>
+              <li><p><a href="https://help.krystal.uk/python/creating-a-python-app-using-the-flask-framework" target="_blank" rel="nofollow">Creating a Python App using the Flask framework</a></p></li>
             </ul>
 
           </div>
@@ -396,6 +397,10 @@ $ python3 -V
                 <dd class="col-sm-9"><em>AppName</em></dd>
                 <dt class="col-sm-3">Application URL</dt>
                 <dd class="col-sm-9"><em>AppName</em></dd>
+                <dt class="col-sm-3">Application startup file</dt>
+                <dd class="col-sm-9">start.py</dd>
+                <dt class="col-sm-3">Application Entry point</dt>
+                <dd class="col-sm-9">app</dd>
               </dl>
             </li>
             <li>Create and Start App</li>
@@ -412,6 +417,39 @@ $ python3 -V
 $ source <em>AppName</em>/bin/activate
 $ pip install Flask
 $ deactivate
+$  source /home/USERNAME/virtualenv/<em>AppName</em>/3.7/bin/activate && cd /home/USERNAME/<em>AppName</em>
+$ ls -la
+              </code>
+            </pre>
+          </div>
+          <p><code>passenger_wsgi.py</code> This file is used by Passenger, a web application server that uses the WSGI (Web Server Gateway Interface) convention to provide the glue between your python application and our webservers.</p>
+          <div class="my-2 bg-dark rounded-lg">
+            <pre class="p-3">
+              <code class="text-white">
+import imp
+import os
+import sys
+
+sys.path.insert(0, os.path.dirname(__file__))
+
+wsgi = imp.load_source('wsgi', 'start.py')
+application = wsgi.application
+              </code>
+            </pre>
+          </div>
+          <p>The cPanel created a basic application startup file <code>start.py</code></p>
+          <div class="my-2 bg-dark rounded-lg">
+            <pre class="p-3">
+              <code class="text-white">
+from flask import Flask
+application = Flask(__name__)
+
+@application.route("/")
+def hello():
+    return "Welcome to your FLASK application!\n"
+
+if __name__ == "__main__":
+    application.run()
               </code>
             </pre>
           </div>
