@@ -77,7 +77,7 @@
     <div class="jumbotron jumbotron-fluid bg-parallax custom-secondary custom-jumbotron p-0 m-0">
       <div class="custom-jumbotron-container text-center d-flex flex-column justify-content-center w-100">
         <h1 class="display-3 fadeInUp">Learning</h1>
-        <h2 class="display-5 fadeIn delay-1s text-monospace">JavaScript & Python</h2>
+        <h2 class="display-5 fadeIn delay-1s text-monospace">JavaScript &amp; Python</h2>
         <h4 class="display-5 fadeIn delay-1s text-monospace">This page describes the learning process from beginning to end!</h4>
         <ul class="list-inline mt-5">
           <li class="list-inline-item fadeIn delay-2s"><a class="btn btn-outline-warning btn-lg" href="../docs/Judith_Desire_Resume.pdf" role="button">Download Resume</a></li>
@@ -117,8 +117,9 @@
               <li><p><a href="https://flask.palletsprojects.com/en/1.1.x/quickstart/#rendering-templates" rel="nofollow" target="_blank">Flask Rendering Templates</a></p></li>
               <li><p><a href="https://flask.palletsprojects.com/en/1.1.x/deploying/wsgi-standalone/" target="_blank" rel="nofollow">Gunicorn [Green Unicorn]</a> is a WSGI [Web Server Gateway Interface] HTTP Server for UNIX. WSGI is a protocol for Python applications in ordeer to serve websites in a uniform matter.</p></li>
               <li><p><a href="https://github.com/pypa/pipenv" target="_blank" rel="nofollow">Pipenv</a> is a tool that brings packaging tools for Python. <br>You no longer need to use <code>pip</code> and <code>virtualenv</code> separately. They work together.</p></li>
+              <li><p><a href="https://support.apple.com/guide/terminal/use-command-line-text-editors-apdb02f1133-25af-4c65-8976-159609f99817/mac" target="_blank" rel="nofollow">Nano</a> <code>nano</code> is a simple command-line editor. See the <a href="x-man-page://nano">nano man page</a>.</p></p></li>
             </ul>
-            
+
           </div>
 
           <div class="col-12">
@@ -181,7 +182,7 @@ name = input()
 # returned input to render {name}
 # f-strings are a great new way to format strings. (new feature in 3)
 <span class="highlight-marker">print(f"Oh Hi, {name}!")</span>
-                  </code>              
+                  </code>
                 </pre>
               </div>
             </ul>
@@ -223,11 +224,11 @@ def about():
 def welcome(name):
   str = "Welcome <b>{}</b> to coding!"
   return str.format(name)
-                  </code>              
+                  </code>
                 </pre>
               </div>
             <h5 class="display-6">command</h5>
-            <p>Set the enviroment variable <em>FLACK_APP</em> to tell flask the file to run the application from is called <b>app.py</b> 
+            <p>Set the enviroment variable <em>FLACK_APP</em> to tell flask the file to run the application from is called <b>app.py</b>
             <p>Run flask application in terminal: <br> <code>export FLASK_APP=app.py <br>
               export FLASK_ENV=development <br>flask run</code></p>
             </p>
@@ -259,7 +260,7 @@ def welcome(name):
   &lt;div class="container"&gt;
   &lt;!-- Using Jinja2 templating syntax to put value of a variable into the template --&gt;
     &lt;h1 class="display-1 text-center"&gt;Welcome to <span class="highlight-marker">{{headline}}</span>!&lt;/h1&gt;
-    
+
   &lt;/div&gt;
   <span class="highlight-marker">&lt;!-- Optional JavaScript --&gt;
   &lt;!-- jQuery first, then Popper.js, then Bootstrap JS --&gt;
@@ -268,7 +269,7 @@ def welcome(name):
   &lt;script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"&gt;&lt;/script&gt;</span>
 &lt;/body&gt;
 &lt;/html&gt;
-                  </code>              
+                  </code>
                 </pre>
               </div>
 
@@ -286,7 +287,7 @@ def index():
   # headline is dynamically rendered by flask, depending on the pass to variables value "Coding"
   headline = "Coding"
   return <span class="highlight-marker">render_template("index.html", headline=headline)</span>
-                  </code>              
+                  </code>
                 </pre>
               </div>
 
@@ -310,7 +311,7 @@ def index():
         <div class="container">
           <h3 class="display-4 text-center">deploy to Godaddy (hosting service)</h3>
           <h5>Ported PuTTY for Mac <small>Installation using HomeBrew</small></h5>
-          <p>Open terminal (Mac) or command prompt (PC) &gt; Type <code>brew update <br>brew cleanup <br>brew install putty</code> <br><mark>Error: Permission denied @ apply2files - /usr/local/share/.config/yarn/global/node_modules/ios-deploy/_Frameworks/MobileDevice.framework</mark><br>To resolve issue use: <code>sudo chown -R $(whoami) $(brew --prefix)/* <br>brew cleanup</p>
+          <p>Open terminal (Mac) or command prompt (PC) &gt; Type <code>brew update <br>brew cleanup <br>brew install putty</code> <br><mark>Error: Permission denied @ apply2files - /usr/local/share/.config/yarn/global/node_modules/ios-deploy/_Frameworks/MobileDevice.framework</mark><br>To resolve issue use: <code>sudo chown -R $(whoami) $(brew --prefix)/* <br>brew cleanup</code></p>
           <p><a href="https://towardsdatascience.com/installing-python-3-and-flask-on-godaddy-1635fe6f24bc">Installing Python 3 and Flask on GoDaddy</a></p>
           <h5>Ported PuTTY for Mac <small>Installation using MacPorts</small></h5>
           <p>Follow step at <a href="https://onvinetech.wordpress.com/2016/01/26/49/" target="_blank" rel="nofollow">How to install Putty on Mac (OS X El Capitan)</a></p>
@@ -321,13 +322,13 @@ def index():
               <div class="my-2 bg-dark rounded-lg">
                 <pre class="p-3">
                   <code class="text-white">
-          python38 has the following notes:
-    To make this the default Python or Python 3 (i.e., the version run by the
-    'python' or 'python3' commands), run one or both of:
-    
-        sudo port select --set python python38
-        sudo port select --set python3 python38
-                  </code>              
+python38 has the following notes:
+To make this the default Python or Python 3 (i.e., the version run by the
+'python' or 'python3' commands), run one or both of:
+
+sudo port select --set python python38
+sudo port select --set python3 python38
+                  </code>
                 </pre>
               </div>
           <h5>access PuTTY for Mac <small>Steps</small></h5>
@@ -336,11 +337,85 @@ def index():
           <p><a href="https://docs.cpanel.net/cpanel/security/ssh-access/82/" target="_blank" rel="nofollow">cPanel & WHM Documentation / cPanel / Security /SSH Access</a></p>
           <p><mark>Error: Shell access is not enabled on your account! <br>
           If you need shell access please contact support. <br>
-          <b>Resolve:</b> <a href="https://www.godaddy.com/help/enable-ssh-for-my-linux-hosting-account-16102">Enable SSH for my Linux Hosting account</a></mark></p>
+          <b>Resolve:</b> <a href="https://www.godaddy.com/help/enable-ssh-for-my-linux-hosting-account-16102" target="_blank" rel="nofollow">Enable SSH for my Linux Hosting account</a></mark></p>
           <ul>
             <li>Execute <em>Desktop/PuTTY</em> application/shell</li>
-            <li></li>
+            <li>Host: <b>domainname.extention</b> <small>domainname.com</small> / Port: <b>22</b></li>
+            <li>Enter username / password</li>
+            <li><p><a href="https://account.godaddy.com/products" target="_blank" rel="nofollow">Locate login info</a><br>Expand <b>Web Hosting</b> &gt; Locate Hosting domainname.extension &amp; Click Manage &gt; Setting panel (cPanel login/Password)</p></li>
           </ul>
+
+          <h5>installation and configure Python <small>hosting server</small></h5>
+          <div class="my-2 bg-dark rounded-lg">
+            <pre class="p-3">
+              <code class="text-white">
+## Download Python 3.7.3 (latest version GoDaddy supports as of writing)
+$ wget https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tgz
+
+## Once wget is done downloading
+$ tar xvzf Python-3.7.3.tgz
+
+## Once tar is done decompressing
+$ cd Python-3.7.3
+
+## This should take you to the main Python Directory
+./configure --prefix=$HOME/.local
+
+## This step sets up your configuration and makes files
+$ make
+$ make install
+
+## Bash profile configuration file:
+$cd $home
+$ nano .bash_profile
+
+# Python 3
+## Press enter and change the file to equal this EXACTLY
+PATH=$HOME/.local/bin:$PATH
+export PATH
+
+$ source ~/.bash_profile
+
+$ python3 -V
+              </code>
+            </pre>
+          </div>
+          <p><mark>Congratulations!</mark> Python3 onto GoDaddy</p>
+          <p><mark>Reference:</mark><a href="https://www.godaddy.com/garage/how-to-install-and-configure-python-on-a-hosted-server/" target="_blank" rel="nofollow">Install and configure Python</a></p>
+
+          <h5>Config Web App on GoDaddy</h5>
+          <ul>
+            <li>Open favorite web browser &gt; Enter in the address bar <b>domainname.extension/cpanel</b></li>
+            <li>Login using username/password &gt; Search for <b>Setup Python App</b> &gt; Click <em>Setup Python App</em></li>
+            <li>
+              Create web application with below config:
+              <dl class="row">
+                <dt class="col-sm-3">Python version</dt>
+                <dd class="col-sm-9">3.7.3</dd>
+                <dt class="col-sm-3">Application root</dt>
+                <dd class="col-sm-9"><em>AppName</em></dd>
+                <dt class="col-sm-3">Application URL</dt>
+                <dd class="col-sm-9"><em>AppName</em></dd>
+              </dl>
+            </li>
+            <li>Create and Start App</li>
+            <li>Next to Application URL &gt; Click <b>open</b> link</li>
+            <li>A new browser tab <b>https://www.domainname.extension/<em>AppName</em></b> with the message <br><code>It works! <br>Python 3.7.3</code></li>
+          </ul>
+
+          <h5>Installing Flask</h5>
+          <div class="my-2 bg-dark rounded-lg">
+            <pre class="p-3">
+              <code class="text-white">
+## Activate the virtual environment
+# Make sure you activate the virtual environment with
+$ source <em>AppName</em>/bin/activate
+$ pip install Flask
+$ deactivate
+              </code>
+            </pre>
+          </div>
+
 
           </div>
     </div>
