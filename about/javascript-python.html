@@ -141,7 +141,7 @@
                 <h4 class="display-5">pip</h4>
                 <ul>
                   <li>Installation
-                    <p>Open terminal (Mac) or command prompt (PC) &gt; Type <br><code>pip</code> or <code>pip --version</code> and <em>click enter/return</em> <br>
+                    <p>Open terminal (Mac) or command prompt (PC) &gt; Type <br><code>pip</code> or <code>pip --version</code> and <em>click enter/return</em> <br><br>
                   <mark>Error message indicates you don't have pip installed</mark><br>
                   After installing Python, install pip with <b>get-pip.py</b> <br>
                     Open terminal (Mac) or command prompt (PC) &gt; Type <br>
@@ -150,12 +150,12 @@
                     <p><mark>Success!</mark> version appeared</p>
                   </li>
                   <li>pip Packages
-                    <p>Type <code>pip list</code> and <em>click enter/return</em> search for <em>virtualenv</em> <br>
+                    <p>Type <code>pip list</code> and <em>click enter/return</em> search for <em>virtualenv</em> <br><br>
                       <mark>Error</mark> &gt; Type <code>sudo pip install virtualenv</code> (sudo allows install permission on Mac)</p>
                     <p><mark>Success!</mark> virtualenv appear in the list</p>
                   </li>
                   <li>pip install Flask
-                    <p>Type <code>pip list</code> and <em>click enter/return</em> search for <em>Flask</em> <br>
+                    <p>Type <code>pip list</code> and <em>click enter/return</em> search for <em>Flask</em> <br><br>
                       <mark>Error</mark> &gt; Type <br><code>sudo pip install flask</code></p>
                     <p><mark>Success!</mark> Flask appear in the list</p>
                   </li>
@@ -300,26 +300,26 @@ def index():
         <div class="container">
           <h3 class="display-4 text-center">deploy app</h3>
           <h5 class="display-6">Pipenv</h5>
-          <p>If you're on MacOS, you can install Pipenv easily with Homebrew: <code>brew install pipenv</code> <br><mark>Note:</mark> You might have to update homebrew using <code>brew update</code></p>
+          <p>If you're on MacOS, you can install Pipenv easily with Homebrew: <code>brew install pipenv</code> <br><br><mark>Note:</mark> You might have to update homebrew using <code>brew update</code></p>
           <p>Open terminal (Mac) or command prompt (PC) &gt; Type <code>cd /path/to/directory</code> and <em>click enter/return</em></code>
           </p>
            <p>In terminal (Mac) or command prompt (PC) &gt; Type <br><code>pipenv install</code> and <em>click enter/return</em></p>
-           <p><mark>Success!</mark> &gt; Type <br><code>pipenv shell</code> and <em>click enter/return</em><br><code>export FLASK_APP=app.py</code><br><code>flask run</code> <br><mark>Success!</mark> &gt; Press CTRL+C to quit</p>
-           <p>Before sharing to the app with the world! Test by &gt; Typing <br><code>flask run --host=0.0.0.0</code> and <em>click enter/return</em> <br><mark>Success!</mark><code>http://0.0.0.0:5000/</code> (Press CTRL+C to quit)</p>
-           <p>Deploy app to hosting env<br></p>
+           <p><mark>Success!</mark> &gt; Type <br><code>pipenv shell</code> and <em>click enter/return</em><br><code>export FLASK_APP=app.py</code><br><code>flask run</code> <br><br><mark>Success!</mark> &gt; Press CTRL+C to quit</p>
+           <p>Before sharing to the app with the world! Test by &gt; Typing <br><code>flask run --host=0.0.0.0</code> and <em>click enter/return</em> <br><br><mark>Success!</mark><code>http://0.0.0.0:5000/</code> (Press CTRL+C to quit)</p>
+           <p>Ready for app deployment to hosting env</p>
         </div>
 
         <div class="container">
-          <h3 class="display-4 text-center">deploy to Godaddy (hosting service)</h3>
+          <h3 class="display-4 text-center">deploy to Godaddy <small>(hosting service)</small></h3>
           <h5>Ported PuTTY for Mac <small>Installation using HomeBrew</small></h5>
-          <p>Open terminal (Mac) or command prompt (PC) &gt; Type <code>brew update <br>brew cleanup <br>brew install putty</code> <br><mark>Error: Permission denied @ apply2files - /usr/local/share/.config/yarn/global/node_modules/ios-deploy/_Frameworks/MobileDevice.framework</mark><br>To resolve issue use: <code>sudo chown -R $(whoami) $(brew --prefix)/* <br>brew cleanup</code></p>
+          <p>Open terminal (Mac) or command prompt (PC) &gt; Type <code>brew update <br>brew cleanup <br>brew install putty</code> <br><br><mark>Error: Permission denied @ apply2files - /usr/local/share/.config/yarn/global/node_modules/ios-deploy/_Frameworks/MobileDevice.framework</mark><br>To resolve issue use: <code>sudo chown -R $(whoami) $(brew --prefix)/* <br>brew cleanup</code></p>
           <p><a href="https://towardsdatascience.com/installing-python-3-and-flask-on-godaddy-1635fe6f24bc">Installing Python 3 and Flask on GoDaddy</a></p>
           <h5>Ported PuTTY for Mac <small>Installation using MacPorts</small></h5>
           <p>Follow step at <a href="https://onvinetech.wordpress.com/2016/01/26/49/" target="_blank" rel="nofollow">How to install Putty on Mac (OS X El Capitan)</a></p>
           <p><a href="https://www.macports.org/install.php" target="_blank" rel="nofollow">macports</a><br>Agree to Xcode license in Terminal: <code>sudo xcodebuild -license</code></p>
           <p><a href="https://www.xquartz.org/" target="_blank" rel="nofollow">XQuartz</a></p>
-          <p class="h3 text-uppercase">Restart Computer</p>
-          <p>Open terminal (Mac) or command prompt (PC) &gt; Type <code>sudo port install putty</code> <small>Type Y when prompt</small><br>The below message appear after putty installation:</p>
+          <p class="h3 text-uppercase text-monospace">Restart Computer <small class="text-lowercase">required for full MacPorts and XQuartz installation</small></p>
+          <p>Open terminal (Mac) or command prompt (PC) &gt; Type <code>sudo port install putty</code> <small>(Type Y when prompt)</small><br>The below message appear after putty installation:</p>
               <div class="my-2 bg-dark rounded-lg">
                 <pre class="p-3">
                   <code class="text-white">
@@ -333,7 +333,7 @@ sudo port select --set python3 python38
                 </pre>
               </div>
           <h5>access PuTTY for Mac <small>Steps</small></h5>
-          <p>Type <code>Putty</code> into terminal <br><mark>create a shortcut <code>cp /opt/local/bin/putty ~/Desktop/PuTTY</code></mark></p>
+          <p>Type <code>Putty</code> into terminal <br><br><mark>create a shortcut <code>cp /opt/local/bin/putty ~/Desktop/PuTTY</code></mark></p>
           <h5 class="display-6">using Putty</h5>
           <p><a href="https://docs.cpanel.net/cpanel/security/ssh-access/82/" target="_blank" rel="nofollow">cPanel & WHM Documentation / cPanel / Security /SSH Access</a></p>
           <p><mark>Error: Shell access is not enabled on your account! <br>
