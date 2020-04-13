@@ -13,7 +13,7 @@ After 15+ years, as a Freelance Web Developer in large to medium size marketing 
 
 Choose from the following areas of interest for in-person or virtually learning:
 - Introduction to HTML
-- Beginner to Intermidate CSS3
+- Beginner to Intermediate CSS3
 - Introduction to Bootstrap
 - Beginner to Advance Quality Assurance for Web Maintenance
 
@@ -83,7 +83,7 @@ By pressing certain key combinations, you can do things that normally need a mou
 
 Learning to use `rel=preload` for `<link>` css and `<script>` scripts
 
-Using `preload` for the CSS files to fetch thrid-party rules and animation to imporove preformance
+Using `preload` for the CSS files to fetch third-party rules and animation to improve performance
 - Learn more on [preloading](https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content)
 
 ## Continue Learning
