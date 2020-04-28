@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,19 +10,28 @@
   <style type="text/css">
     /* Google Font */
     @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Roboto+Mono:wght@500&display=swap');
+
     /* Global Styles */
-    html, body {
+    html,
+    body {
       width: 100%;
       height: 100%;
       display: block;
       word-wrap: break-word;
     }
+
     body {
       margin: 0;
       font-family: 'Courier Prime', monospace;
       font-size: 1em;
     }
-    a, a:visited, a:link { color: gray; }
+
+    a,
+    a:visited,
+    a:link {
+      color: gray;
+    }
+
     h1 {
       font-family: 'Roboto Mono', monospace;
       font-weight: 500;
@@ -29,15 +39,18 @@
       margin: 0 0 1em 0;
       text-align: center;
     }
+
     .container {
       display: flex;
       justify-content: center;
       position: relative;
       margin-bottom: 1em;
     }
+
     .container .introduction-img {
       flex: 0 0 30%;
     }
+
     .container img {
       display: block;
       width: 100%;
@@ -45,33 +58,39 @@
       border-radius: 50%;
       margin: 0 auto;
     }
+
     .container .introduction {
       flex: 0 0 50%;
     }
+
     .introduction p:first-of-type {
       font-size: 1.55em;
     }
+
     .socialmedia {
       margin: 0;
       padding: 0;
     }
+
     .socialmedia li {
       display: inline-block;
     }
+
     /* responsive layout for mobile devices */
     @media (max-width: 566px) {
       .container {
         flex-flow: column wrap;
         padding: 0 5%;
       }
+
       .container .introduction-img,
       .container .introduction {
         width: 100%;
       }
     }
-
   </style>
 </head>
+
 <body>
   <!-- Create a 1-page website with a header, picture, and social media links. The page should tells us about you and why you are interested in becoming a TKH Innovation Fellow. -->
   <h1>Hello I'm, Judith "Judi" Desire</h1>
@@ -81,8 +100,13 @@
     </div>
     <div class="introduction">
       <p>A freelance techie based in New York City.</p>
-      <p>I graduated in 2001 with a Bachelors of Science degree in Computer Science at New York Institute of Technology and began my tech career as a data analyst working on Oracle. I envisioned myself to be the person people seeked out for data analyst advice. Unfortunately, I worked in a hostile workplace and couldn't find a person to trust or knowledgeable in navigating the tech industry. As a result, I changed career and worked 15+ years as a Freelance Web Developer in large to medium size marketing agencies in New York City and San Francisco. In 2019, I brought my skills and knowledge into the classroom and became a Code Instructor for 6-9 week Basic Web Development programs in Harlem and Brooklyn. The programs provided underserved and underrepresented groups of non-technical professionals the resources in building a fully functional website using HTML5, CSS3, Bootstrap and various web based tools.</p>
-      <p>I am interested in becoming a TKH Innovation Fellow because the Data Science with Python track will provide the opportunity to continue on the data path, understand the importance of datasets and keep up with growing demand for data. My plans are to work with organizations similar to Silicon Harlem, visualizing social justice initiatives, such as Greater Harlem Coalition (GHC) and 596 Acres, to understand the bias in data collection and assist in identifying the outcome from the urban development in underserved communities.</p>
+      <p>I graduated in 2001 with a Bachelors of Science degree in Computer Science at New York Institute of Technology and began my tech career as a data analyst working on Oracle. I envisioned myself to be the person people seeked out for data
+        analyst advice. Unfortunately, I worked in a hostile workplace and couldn't find a person to trust or knowledgeable in navigating the tech industry. As a result, I changed career and worked 15+ years as a Freelance Web Developer in large to
+        medium size marketing agencies in New York City and San Francisco. In 2019, I brought my skills and knowledge into the classroom and became a Code Instructor for 6-9 week Basic Web Development programs in Harlem and Brooklyn. The programs
+        provided underserved and underrepresented groups of non-technical professionals the resources in building a fully functional website using HTML5, CSS3, Bootstrap and various web based tools.</p>
+      <p>I am interested in becoming a TKH Innovation Fellow because the Data Science with Python track will provide the opportunity to continue on the data path, understand the importance of datasets and keep up with growing demand for data. My
+        plans are to work with organizations similar to Silicon Harlem, visualizing social justice initiatives, such as Greater Harlem Coalition (GHC) and 596 Acres, to understand the bias in data collection and assist in identifying the outcome from
+        the urban development in underserved communities.</p>
       <ul class="socialmedia">
         <li><a href="https://www.linkedin.com/in/jdesire/" target="_blank">linkedin</a></li>
         <li><a href="https://github.com/berryny/cafe-tech" target="_blank">github</a></li>
@@ -90,5 +114,75 @@
     </div>
   </div>
 
+
+  <script type="text/javascript">
+    // TKH Prework
+    // ASSIGNMENT 1
+    var name = "Judi";
+
+    // ASSIGNMENT 2
+    var name = prompt("What is your name?");
+    console.log("Welcome " + name + " to TKH!");
+
+    // ASSIGNMENT 3
+    var num1 = 300;
+    var num2 = 40;
+    console.log("num: " + num1 * num2);
+
+    // ASSIGNMENT 4
+    const array = [1, 45, 32, 21, 5, 17, 43, 93];
+    array.map((n) => {
+      if (n < 25) {
+        console.log("under");
+      } else {
+        console.log("over");
+      }
+    });
+
+    // ASSIGNMENT 5
+    const name_arr = ["Judi", "Anne Marie", "Joe", "Desire"];
+    let big_name = "";
+
+    const check_name = (cn) => {
+      if (cn.length > big_name.length) {
+        big_name = cn;
+      }
+    }
+
+    name_arr.map((n) => {
+      check_name(n);
+    });
+
+    console.log("big_name", big_name);
+
+    // ASSIGNMENT 6
+    const names = ["Fern", "Alexa", "Constance", "Daniella", "Connie", "Flora", "Hannah", "Maddie"];
+    let even_name = []
+    let odd_name = [];
+
+    const check_names = (cn) => {
+      if (cn.length % 2) {
+        odd_name.push(cn);
+        let odd_letter = odd_name[odd_name.length - 1];
+        let replace_last_letter = odd_letter.replace(odd_letter[odd_letter.length - 1], "c");
+        odd_name[odd_name.length - 1] = replace_last_letter;
+      } else {
+        even_name.push(cn);
+        let even_letter = even_name[even_name.length - 1];
+        let replace_first_letter = even_letter.replace(even_letter[0], "b");
+        even_name[even_name.length - 1] = replace_first_letter;
+      }
+    }
+
+    names.map((n) => {
+      check_names(n);
+    });
+
+    console.log(even_name, odd_name);
+
+    // ASSIGNMENT 7
+    // https://berryny.github.io/cafe-tech/onepager.html
+  </script>
 </body>
+
 </html>
