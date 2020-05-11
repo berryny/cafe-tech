@@ -85,6 +85,21 @@ Learning to use `rel=preload` for `<link>` css and `<script>` scripts
 
 Using `preload` for the CSS files to fetch third-party rules and animation to improve performance
 - Learn more on [preloading](https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content)
+- [`lh` and `rlh` units](https://css-tricks.com/lh-and-rlh-units/)
+- [Font-relative lengths: the em, ex, cap, ch, ic, rem, lh, rlh units](https://www.w3.org/TR/css-values-4/#font-relative-lengths)
+
+`lh unit`
+
+Equal to the computed value of the line-height property of the element on which it is used, converting normal to an absolute length by using only the metrics of the first available font.
+
+`rlh unit`
+
+Equal to the computed value of line-height property on the root element, converting normal to an absolute length as above.
+
+- [Getting Started with ESLint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
+- [CSS Selectors Level 4](https://css4-selectors.com/selectors/)
+- [Jest](https://jestjs.io/docs/en/getting-started.html) is a delightful JavaScript Testing Framework with a focus on simplicity.
 
 ## Continue Learning
 
