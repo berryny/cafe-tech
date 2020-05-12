@@ -29,7 +29,7 @@ Create `index.html` file and paste the below code
 </head>
 <body>
 	<h1>Web Programming with Python and JavaScript</h1>
-	
+
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -64,3 +64,10 @@ Your website must have at least one stylesheet file.
 - You must use Bootstrap 4 on your website, taking advantage of at least one Bootstrap component, and using at least two Bootstrap columns for layout purposes using Bootstrap’s grid model.
 - Your stylesheets must use at least one SCSS variable, at least one example of SCSS nesting, and at least one use of SCSS inheritance.
 - In README.md, include a short writeup describing your project, what’s contained in each file, and (optionally) any other additional information the staff should know about your project.
+
+### The Python programming language
+- [Learn more](https://github.com/python/cpython)
+- [glot.io](https://glot.io/) - an open source pastebin with runnable snippets and API.
+- Project [Jupyter](https://jupyter.org/) exists to develop open-source software, open-standards, and services for interactive computing across dozens of programming languages.
+- Jupyter via [your browser](https://jupyter.org/try)
+- [More Python for Beginners](https://www.youtube.com/playlist?list=PLlrxD0HtieHiXd-nEby-TMCoUNwhbLUnj)
